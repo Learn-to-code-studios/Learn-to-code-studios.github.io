@@ -2,9 +2,28 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>title</title>
+  <title>Learn</title>
 </head>
 <body>
-
+  <h1>Start learning </h1>
+  <p>
+    Please select a coding lanuage
+  </p>
+  <select name="Options" id="Lg">
+	<option>HTML</option>
+	<option>Lua</option>
+   <button onclick="alert('Loading') refresh()">Done
+     <progress value="0" id="prog">Progress</progress>
+</select>
+  <script>
+    function refresh() {
+      const selection = getElement("Lg")
+      var progressbar = getElement("prog")
+      if selection.Value = "Lua"{
+        progressbar.Value = 1
+      }
+      
+    }
+  </script>
 </body>
 </html>
